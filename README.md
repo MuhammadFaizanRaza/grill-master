@@ -7,5 +7,5 @@ On side bar he see information about items which are out of grill
 ## installation
 
 clone repo
-and run this commands
-npm install
+and run this command
+> npm install
