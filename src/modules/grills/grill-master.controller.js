@@ -6,7 +6,7 @@
  */
 const mainView = async (req, res, next) => {
   try {
-    return res.render('main');
+    res.render('main');
   } catch (e) {
     console.log(e);
   }
@@ -63,7 +63,7 @@ const grill = async (req, res, next) => {
 
     grill += `</div>`;
 
-    return res.render('grill', { grill, outofgrill });
+    res.render('grill', { grill, outofgrill });
   } catch (e) {
     console.log(e);
   }
