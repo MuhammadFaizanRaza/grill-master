@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const compress = require('compression');
-const cors = require('cors');
 const logger = require('morgan');
 //Loads the handlebars module
 const handlebars = require('express-handlebars');
@@ -46,8 +45,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(compress());
-// enable CORS - Cross Origin Resource Sharing
-app.use(cors());
+
 
 // configure logger if in development
 if (ENV === 'development') {
